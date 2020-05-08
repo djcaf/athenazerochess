@@ -22,8 +22,9 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{2285C9C2-D076-4E10-98A3-01EBA69621F0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>AthenaChessEngine</RootNamespace>
+    <RootNamespace>AthenaZero</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>AthenaZero</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -1,15 +1,15 @@
 /*
-	Part of the Athena Chess Engine.
+	Part of the AthenaZero Chess Engine.
 
 	This file contains code related to strings. This is code that is used
 	but not supported (yet) by the C++ standard library.
 	
-	The Athena Chess Engine is free software: you can redistribute it and/or modify
+	AthenaZero is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
 	the Free Software Foundation, either version 3 of the License, or
 	(at your option) any later version.
 
-	The Athena Chess Engine is distributed in the hope that it will be useful,
+	AthenaZero is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	GNU General Public License for more details.
@@ -18,17 +18,17 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
-
 #include <string>
+#include <algorithm>
+
+#include "strings.h"
 
 namespace ATHENAENG
 {
-	/*
-		Checks if a string is numeric only.
-
-		s: The string
-		Returns: True if numeric, false oterwise
-	*/
-	bool is_number(const std::string& s);
+	bool is_number(const std::string& s)
+	{
+		std::string::const_iterator it = s.begin();
+		while (it != s.end() && std::isdigit(*it)) ++it;
+		return !s.empty() && it == s.end();
+	}
 }
