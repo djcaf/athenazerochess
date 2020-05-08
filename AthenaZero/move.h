@@ -18,7 +18,8 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
+#ifndef ATHENAZERO_ENGINE_MOVE
+#define ATHENAZERO_ENGINE_MOVE
 
 #include <string>
 
@@ -93,3 +94,5 @@ namespace ATHENAENG
 		std::string GetMoveAsStandardFormat();
 	};
 }
+
+#endif

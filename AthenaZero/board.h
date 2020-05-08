@@ -18,7 +18,8 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
+#ifndef ATHENAZERO_ENGINE_BOARD
+#define ATHENAZERO_ENGINE_BOARD
 
 #include "piece.h"
 #include "move.h"
@@ -663,3 +664,5 @@ namespace ATHENAENG
 		bool IncreaseUnmakeListCapacity(size_t newCapacity);
 	};
 }
+
+#endif

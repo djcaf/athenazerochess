@@ -18,7 +18,8 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
+#ifndef ATHENAZERO_ENGINE_UNMAKE
+#define ATHENAZERO_ENGINE_UNMAKE
 
 #include "board0x88lib.h"
 #include "typedefs.h"
@@ -70,3 +71,5 @@ namespace ATHENAENG
 		int FullMoveNumber{ 1 };
 	};
 }
+
+#endif

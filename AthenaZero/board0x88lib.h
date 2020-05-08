@@ -18,7 +18,8 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
+#ifndef ATHENAZERO_ENGINE_BOARD0X88LIB
+#define ATHENAZERO_ENGINE_BOARD0X88LIB
 
 #include "typedefs.h"
 #include "movelib.h"
@@ -160,3 +161,5 @@ namespace ATHENAENG
 		return ss.str();
 	}
 }
+
+#endif

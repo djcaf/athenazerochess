@@ -17,7 +17,8 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
+#ifndef ATHENAZERO_ENGINE_CONSTANTS
+#define ATHENAZERO_ENGINE_CONSTANTS
 
 namespace ATHENAENG
 {
@@ -35,3 +36,5 @@ namespace ATHENAENG
 	*/
 	constexpr int UnmakeMoveListCapacityIncrement = 10;
 }
+
+#endif

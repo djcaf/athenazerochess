@@ -18,7 +18,8 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
+#ifndef ATHENAZERO_ENGINE_PIECE
+#define ATHENAZERO_ENGINE_PIECE
 
 namespace ATHENAENG
 {
@@ -56,3 +57,5 @@ namespace ATHENAENG
 		int PieceColour{ PieceColourWhite };
 	};
 }
+
+#endif

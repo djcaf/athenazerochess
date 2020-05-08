@@ -18,7 +18,8 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
+#ifndef ATHENAZERO_ENGINE_MOVELIB
+#define ATHENAZERO_ENGINE_MOVELIB
 
 namespace ATHENAENG
 {
@@ -100,3 +101,5 @@ namespace ATHENAENG
 		}
 	}
 }
+
+#endif

@@ -17,8 +17,12 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
+#ifndef ATHENAZERO_ENGINE_TYPEDEFS
+#define ATHENAZERO_ENGINE_TYPEDEFS
+
 namespace ATHENAENG
 {
 	typedef unsigned int BoardIndex0x88;
 }
+
+#endif

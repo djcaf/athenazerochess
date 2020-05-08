@@ -18,7 +18,8 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#pragma once
+#ifndef ATHENAZERO_ENGINE_STRINGS
+#define ATHENAZERO_ENGINE_STRINGS
 
 #include <string>
 
@@ -32,3 +33,5 @@ namespace ATHENAENG
 	*/
 	bool is_number(const std::string& s);
 }
+
+#endif
