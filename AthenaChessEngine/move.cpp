@@ -27,7 +27,7 @@
 
 namespace ATHENAENG
 {
-	std::string Move::GetMoveAsXBoardFormat()
+	std::string Move::GetMoveAsStandardFormat()
 	{
 		if (!Is0x88SquareValid(MoveFrom)) return "";
 		if (!Is0x88SquareValid(MoveTo)) return "";

@@ -82,11 +82,14 @@ namespace ATHENAENG
 		BoardIndex0x88 SecondaryMoveTo{ Null0x88Square };
 
 		/*
-			Gets the move in XBoard format.
+			Gets the move in the standard format.
 
-			Returns: The move in XBoard format. If there is an invalid value then
+			The format is e1e4, e7e8q for promotion. For castling then
+			the move will be the king move, e.g. e1g1
+
+			Returns: The move in standard format. If there is an invalid value then
 					 returns a blank string.
 		*/
-		std::string GetMoveAsXBoardFormat();
+		std::string GetMoveAsStandardFormat();
 	};
 }
