@@ -20,7 +20,7 @@
 #ifndef ATHENAZERO_ENGINE_TYPEDEFS
 #define ATHENAZERO_ENGINE_TYPEDEFS
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	typedef unsigned int BoardIndex0x88;
 }

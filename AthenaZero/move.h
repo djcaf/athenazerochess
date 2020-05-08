@@ -27,7 +27,7 @@
 #include "typedefs.h"
 #include "board0x88lib.h"
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	class Move
 	{

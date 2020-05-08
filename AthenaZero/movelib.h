@@ -21,7 +21,7 @@
 #ifndef ATHENAZERO_ENGINE_MOVELIB
 #define ATHENAZERO_ENGINE_MOVELIB
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	/*
 	Convertes the numeric file to its character equivalent.

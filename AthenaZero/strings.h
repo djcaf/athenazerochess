@@ -23,7 +23,7 @@
 
 #include <string>
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	/*
 		Checks if a string is numeric only.

@@ -25,7 +25,7 @@
 #include "piece.h"
 #include "board0x88lib.h"
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	std::string Move::GetMoveAsStandardFormat()
 	{

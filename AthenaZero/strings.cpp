@@ -23,7 +23,7 @@
 
 #include "strings.h"
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	bool is_number(const std::string& s)
 	{

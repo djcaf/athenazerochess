@@ -21,7 +21,7 @@
 #ifndef ATHENAZERO_ENGINE_PIECE
 #define ATHENAZERO_ENGINE_PIECE
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	class Piece
 	{

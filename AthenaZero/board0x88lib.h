@@ -27,7 +27,7 @@
 #include <string>
 #include <sstream>
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	//Can be accessed in the board as it is an valid array index even though not a valid square - Avoids some branch statements.
 	static constexpr BoardIndex0x88 Null0x88Square = 0x88;

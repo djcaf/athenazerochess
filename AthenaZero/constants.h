@@ -20,7 +20,7 @@
 #ifndef ATHENAZERO_ENGINE_CONSTANTS
 #define ATHENAZERO_ENGINE_CONSTANTS
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	/*
 		Holds the initial size of the unmake move list which is a basic

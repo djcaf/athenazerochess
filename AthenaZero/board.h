@@ -27,7 +27,7 @@
 #include "board0x88lib.h"
 #include "unmake.h"
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 
 

@@ -28,7 +28,7 @@
 #include "unmake.h"
 #include "strings.h"
 
-namespace ATHENAENG
+namespace ATHENAZEROENG
 {
 	Board::Board()
 	{
