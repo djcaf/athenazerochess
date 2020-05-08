@@ -151,6 +151,10 @@
     <ClCompile Include="AthenaZero.cpp" />
     <ClCompile Include="board.cpp" />
     <ClCompile Include="move.cpp" />
+    <ClCompile Include="perft.cpp" />
+    <ClCompile Include="perftresult.cpp" />
+    <ClCompile Include="perftresults.cpp" />
+    <ClCompile Include="perfttest.cpp" />
     <ClCompile Include="strings.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -159,8 +163,15 @@
     <ClInclude Include="constants.h" />
     <ClInclude Include="move.h" />
     <ClInclude Include="movelib.h" />
+    <ClInclude Include="perft.h" />
+    <ClInclude Include="perftcount.h" />
+    <ClInclude Include="perftinternalstats.h" />
+    <ClInclude Include="perftresult.h" />
+    <ClInclude Include="perftresults.h" />
+    <ClInclude Include="perfttest.h" />
     <ClInclude Include="piece.h" />
     <ClInclude Include="strings.h" />
+    <ClInclude Include="timer.h" />
     <ClInclude Include="typedefs.h" />
     <ClInclude Include="unmake.h" />
   </ItemGroup>

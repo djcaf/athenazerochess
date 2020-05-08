@@ -22,6 +22,11 @@
 #include <iomanip>
 #include <string>
 
+#include "perft.h"
+#include "perftresults.h"
+
+using namespace ATHENAZEROENG;
+
 int main()
 {
 	bool exit = false;
@@ -38,7 +43,101 @@ int main()
 			validCommand = true;
 			exit = true;
 		}
-		
+		else if (command == "perft")
+		{
+			validCommand = true;
+			Perft perft;
+			PerftResults results = perft.RunAllPerftTests(0, false);
+			std::cout << "Result Count: " << results.GetCount() << std::endl << std::endl;
+
+			int passed = 0;
+			int failed = 0;
+
+			for (size_t i = 0; i < results.GetCount(); ++i)
+			{
+				PerftResult result = results.GetResult(i);
+				std::cout << "Test: " << result.GetTestName() << ", Depth: " << result.GetDepth() << std::endl;
+				std::cout << "   Result: ";
+				if (result.GetPassed())
+				{
+					std::cout << "PASSED" << std::endl;
+				}
+				else
+				{
+					std::cout << "FAILED" << std::endl;
+				}
+				std::cout << "   FEN: " << result.GetFen() << std::endl;
+				std::cout << "   Setup: ";
+				if (result.GetSetupPassed())
+				{
+					std::cout << "PASSED" << std::endl;
+
+					std::cout << "   Integrity: ";
+					if (result.GetIntergityCheckPassed())
+					{
+						std::cout << "PASSED" << std::endl;
+
+						std::cout << "   Nodes: ";
+
+						if (result.NodeCount().GetIsPassed())
+						{
+							std::cout << "PASSED" << std::endl;
+							++passed;
+						}
+						else
+						{
+							std::cout << "FAILED" << std::endl;
+							++failed;
+						}
+
+						std::stringstream nodeResults;
+						//TODO: Why?
+						//Disable C26444 as this causes issues in Visual Studio
+#pragma warning (push)
+#pragma warning (disable: 26444)	
+						//TODO: Find out why needed?
+						nodeResults.imbue(std::locale(""));
+#pragma warning (pop)
+
+						//Disable scientific notation
+						nodeResults.setf(std::ios::fixed, std::ios::floatfield);
+						nodeResults.setf(std::ios::showpoint);
+
+						nodeResults << "      Expected: " << result.NodeCount().GetExpectedCount() << "\n";
+						nodeResults << "      Actual: " << result.NodeCount().GetActualCount();
+						std::cout << nodeResults.str() << std::endl;
+
+						std::cout << "Total Time: " << result.GetTimeTaken() << std::endl;
+						std::cout << "Rate: " << result.GetNodesPerSecond() << std::endl;
+						std::cout << "Node Time: " << result.GetTimeForOneNode() << std::endl;
+					}
+					else
+					{
+						std::cout << "FAILED" << std::endl;
+						++failed;
+					}
+				}
+				else
+				{
+					std::cout << "FAILED" << std::endl;
+					++failed;
+				}
+				std::cout << std::endl << std::endl;
+			}
+
+			std::cout << "Passed: " << passed << std::endl;
+			std::cout << "Failed: " << failed << std::endl;
+			std::cout << "Total: " << results.GetCount() << std::endl;
+			if (failed == 0)
+			{
+				std::cout << " *** PASSED ***" << std::endl;
+			}
+			else
+			{
+				std::cout << " *** FAILED ***" << std::endl;
+			}
+		}
+
 		if (!validCommand)
 		{
 			std::cout << "Unknown command '" << command << "'" << std::endl;

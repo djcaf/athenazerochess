@@ -28,6 +28,15 @@
     <Filter Include="Source Files\Utils">
       <UniqueIdentifier>{2179b548-f45e-48c6-8381-ded92cbbf905}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Perft">
+      <UniqueIdentifier>{173962d5-9591-4b04-981d-8b952788dfb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Perft">
+      <UniqueIdentifier>{c72d05e2-e406-42b3-aa54-92e5972ca4ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Chrono">
+      <UniqueIdentifier>{0130fae5-3bf6-4157-b67a-e7d677878665}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="board.cpp">
@@ -41,6 +50,18 @@
     </ClCompile>
     <ClCompile Include="AthenaZero.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="perft.cpp">
+      <Filter>Source Files\Perft</Filter>
+    </ClCompile>
+    <ClCompile Include="perftresult.cpp">
+      <Filter>Source Files\Perft</Filter>
+    </ClCompile>
+    <ClCompile Include="perftresults.cpp">
+      <Filter>Source Files\Perft</Filter>
+    </ClCompile>
+    <ClCompile Include="perfttest.cpp">
+      <Filter>Source Files\Perft</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +91,27 @@
     </ClInclude>
     <ClInclude Include="strings.h">
       <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="perft.h">
+      <Filter>Header Files\Perft</Filter>
+    </ClInclude>
+    <ClInclude Include="perftcount.h">
+      <Filter>Header Files\Perft</Filter>
+    </ClInclude>
+    <ClInclude Include="perftinternalstats.h">
+      <Filter>Header Files\Perft</Filter>
+    </ClInclude>
+    <ClInclude Include="perftresult.h">
+      <Filter>Header Files\Perft</Filter>
+    </ClInclude>
+    <ClInclude Include="perftresults.h">
+      <Filter>Header Files\Perft</Filter>
+    </ClInclude>
+    <ClInclude Include="perfttest.h">
+      <Filter>Header Files\Perft</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>Header Files\Chrono</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

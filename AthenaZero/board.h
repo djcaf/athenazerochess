@@ -29,8 +29,6 @@
 
 namespace ATHENAZEROENG
 {
-
-
 	class Board
 	{
 	public:
