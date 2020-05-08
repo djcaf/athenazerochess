@@ -36,11 +36,11 @@
     <ClCompile Include="move.cpp">
       <Filter>Source Files\Board</Filter>
     </ClCompile>
-    <ClCompile Include="Athena.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="strings.cpp">
       <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="AthenaZero.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

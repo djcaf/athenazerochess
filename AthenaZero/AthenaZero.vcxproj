@@ -148,7 +148,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Athena.cpp" />
+    <ClCompile Include="AthenaZero.cpp" />
     <ClCompile Include="board.cpp" />
     <ClCompile Include="move.cpp" />
     <ClCompile Include="strings.cpp" />
