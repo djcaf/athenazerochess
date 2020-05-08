@@ -1,1 +1,1 @@
-Currently no details yet - just a place holder
+This is an in development C++ chess engine called AthenaZero.
