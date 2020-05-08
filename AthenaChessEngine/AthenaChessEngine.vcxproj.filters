@@ -13,10 +13,63 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Board">
+      <UniqueIdentifier>{60425e1b-6c96-4ada-acaa-3d8ff928ce85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Board">
+      <UniqueIdentifier>{56d0f748-bcfb-4818-843e-635417c97f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Parameters">
+      <UniqueIdentifier>{209e926d-2c51-4fd1-8118-76fd7cd3c956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{29cd77c1-e4b3-47dd-9236-d943d75d6fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{2179b548-f45e-48c6-8381-ded92cbbf905}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AthenaChessEngine.cpp">
+    <ClCompile Include="board.cpp">
+      <Filter>Source Files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="move.cpp">
+      <Filter>Source Files\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Athena.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="strings.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="board.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="piece.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="move.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="board0x88lib.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="movelib.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="unmake.h">
+      <Filter>Header Files\Board</Filter>
+    </ClInclude>
+    <ClInclude Include="typedefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Header Files\Parameters</Filter>
+    </ClInclude>
+    <ClInclude Include="strings.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
