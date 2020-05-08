@@ -17,11 +17,33 @@
 	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include <sstream>
 #include <iostream>
+#include <iomanip>
+#include <string>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	bool exit = false;
+	while (!exit)
+	{
+		std::cout << "ATHENA> ";
+		std::string command;
+		if (!std::getline(std::cin, command)) return 1;
+
+		bool validCommand = false;
+
+		if (command == "exit")
+		{
+			validCommand = true;
+			exit = true;
+		}
+		
+		if (!validCommand)
+		{
+			std::cout << "Unknown command '" << command << "'" << std::endl;
+		}
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
